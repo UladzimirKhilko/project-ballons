@@ -13,6 +13,7 @@
         text-align: center
         &:hover
             cursor: pointer
+        box-shadow: $box-shadow
     &__background
         width: 5rem
         height: 5rem
@@ -75,12 +76,12 @@
 
     &__icon
         position: relative
-        margin-top: 36px 
+        margin-top: 3.6rem 
         &,
         &::before,
         &::after
-            width: 30px
-            height: 2px
+            width: 3rem
+            height: .2rem
             background: $color-black
             display: inline-block
         &::before,
@@ -90,13 +91,13 @@
             left: 0
             transition: .7s all
         &::before
-            top: -8px
+            top: -.8rem
         &::after
-            top: 8px 
+            top: .8rem 
     &__button:hover &__icon::before
-        top: -10px
+        top: -1rem
     &__button:hover &__icon::after
-        top: 10px            
+        top: 1rem            
 
     &__toggle:checked + &__button &__icon
         background: transparent
